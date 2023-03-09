@@ -1,8 +1,8 @@
 const Role = require('../models/role');
 const User = require('../models/users');
 
-const roleValidation = async(role = '') => {
-    const exists_role = await Role.findOne({ role });
+const roleValidation = async(rol = '') => {
+    const exists_role = await Role.findOne({ rol });
     if( !exists_role ){
         throw new Error(`The role: ${ role } does not exist`)
     }

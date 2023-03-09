@@ -5,7 +5,7 @@ const dbConnection = async() => {
     try {
         mongoose.set('strictQuery', false);
         await mongoose.connect( process.env.MONGODB_CNN );
-        console.log('Base de Datos Online...');
+        console.log('DataBase Online...');
 
     } catch (error) {
         console.log(error);
